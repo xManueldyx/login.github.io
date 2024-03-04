@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <script>
+        function validarInicioSesion() {
+            // Obtiene los valores de usuario y contraseña
+            var usuario = document.getElementById("usuario").value;
+            var contraseña = document.getElementById("contraseña").value;
+
+            // Verifica si el usuario y la contraseña son correctos
+            if (usuario === "usuario" && contraseña === "contraseña") {
+                alert("Inicio de sesión exitoso");
+                // Aquí puedes redirigir a otra página
+            } else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Iniciar sesión</h2>
+    <form>
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br>
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        <input type="button" value="Iniciar sesión" onclick="validarInicioSesion()">
+    </form>
+    <p>usuario: usuario</p>
+    <p>contraseña: contraseña</p>
+</body>
+</html>
